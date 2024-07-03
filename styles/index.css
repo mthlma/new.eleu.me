@@ -48,7 +48,7 @@ i {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  box-shadow: 0 0 500px rgba(0,0,0,0.9) inset;
+  box-shadow: 0 0 500px rgba(0, 0, 0, 0.9) inset;
 }
 
 .gh_photo {
@@ -89,7 +89,7 @@ i {
   background-color: var(--block-bg-color);
 }
 
-.nf_block_container i {  
+.nf_block_container i {
   font-size: 45px;
   padding-right: 10px;
 }
@@ -99,4 +99,23 @@ i {
   justify-content: center;
   align-items: center;
   flex-direction: row;
+}
+
+@media only screen and (max-width: 730px) {
+  .gh_photo {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .main_container {
+    flex-direction: column;
+  }
+
+  .block_container {
+    width: fit-content;
+    height: fit-content;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: var(--block-bg-color);
+  }
 }
