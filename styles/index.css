@@ -1,14 +1,13 @@
 :root {
-  --header-bg-color: #ffffff;
+  --index-text-color: #000000;
   --index-bg-color: #6a2592;
   --block-bg-color: #ffffff;
-
-  --notfound-bg-color: #24242e;
-  --notfound-text-color: #ffffff;
 }
 
 body {
   font-family: "Work Sans", sans-serif;
+  background-color: var(--block-bg-color);
+  color: var(--index-text-color);
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -19,21 +18,21 @@ a:visited,
 a:hover,
 a:active,
 a:focus {
-  color: #000000;
+  color: var(--index-text-color);
   text-decoration: none;
 }
 
 i {
   font-size: 28px;
+  color: var(--index-text-color);
 }
 
 .header {
-  background-color: var(--header-bg-color);
+  background-color: var(--block-bg-color);
   padding-left: 20px;
 }
 
 .header_list {
-  color: black;
   display: flex;
   list-style-type: none;
   padding: 0;
@@ -48,7 +47,7 @@ i {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  box-shadow: 0 0 500px rgba(0, 0, 0, 0.9) inset;
+  box-shadow: 0 0 500px #000000e6 inset;
 }
 
 .gh_photo {
@@ -117,5 +116,13 @@ i {
     margin-left: 10px;
     margin-right: 10px;
     background-color: var(--block-bg-color);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --index-text-color: #ffffff;
+    --index-bg-color: #6a2592;
+    --block-bg-color: #24242e;
   }
 }
