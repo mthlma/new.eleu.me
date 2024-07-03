@@ -76,3 +76,27 @@ i {
 .block_container p {
   margin-top: -10px;
 }
+
+.nf_block_container {
+  border-radius: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  width: 350px;
+  height: fit-content;
+  background-color: var(--block-bg-color);
+}
+
+.nf_block_container i {  
+  font-size: 45px;
+  padding-right: 10px;
+}
+
+.nf_heading_block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
