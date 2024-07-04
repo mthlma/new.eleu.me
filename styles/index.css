@@ -1,6 +1,6 @@
 :root {
   --index-text-color: #000000;
-  --index-bg-color: #6a2592;
+  --index-bg-color: #9662b4;
   --block-bg-color: #ffffff;
 }
 
@@ -52,7 +52,7 @@ i {
 
 .gh_photo {
   width: 176px;
-  border-radius: 15px;
+  border-radius: 50%;
   user-select: none;
   -moz-user-select: none;
   -webkit-user-drag: none;
